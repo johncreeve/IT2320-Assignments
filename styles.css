@@ -7,3 +7,28 @@ h1
 	{
 		color: purple;
 	}
+
+body
+	{
+		background-color: olive;  //make background color of the body olive
+	}
+	
+	
+.emphasis
+	{
+	font-weight: bold;
+	}
+	
+	
+ul {
+    list-style-image: url('golf-bulletpoint.png');
+    list-style-position: inside;
+}
+
+.mainImage {
+  display: block;
+  max-width:280px;
+  max-height:350px;
+  width: auto;
+  height: auto;
+}
