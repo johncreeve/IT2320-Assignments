@@ -10,7 +10,7 @@ h1
 
 body
 	{
-		background-color: olive;  //make background color of the body olive
+		background-color: olive; 
 	}
 	
 	
@@ -31,4 +31,60 @@ ul {
   max-height:350px;
   width: auto;
   height: auto;
+}
+
+.page-content
+	{
+		width	:90%;
+		border	:12px solid yellow;
+	}
+	
+@media screen and (max-width: 320px)
+{
+	.list-items
+		{
+			border: 5px solid Cornsilk;
+			color: CornflowerBlue;
+			font-weight: normal;
+		}
+		
+	.mainImage
+	{
+		max-width: 100%;
+		max-height: 100%;
+		min-width: 10%;
+		min-height: 10%;
+	}
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 768px)
+{
+	.list-items
+			{
+				border: 10px solid AliceBlue;
+				color: LawnGreen;
+				font-weight: normal;
+			}
+			
+	.mainImage 
+	{
+    display: block;
+    max-width: 280px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+	}
+	
+}
+
+@media screen and (min-width: 769px)
+{
+	.list-items
+			{
+				border: 15px solid SandyBrown;
+				color: LemonChiffon;
+				font-weight: bold;
+			}
+	
 }
