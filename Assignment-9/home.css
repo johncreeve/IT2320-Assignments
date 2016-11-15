@@ -1,0 +1,43 @@
+div#box1 
+{
+  border-radius: 10px;
+  background: red;
+  padding: 5px;
+  width: 300px;
+  height: 230px;
+}
+
+div#box2 
+{
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  
+  -ms-transform: rotate(180deg); /* Works for IE 9 (I'm using chrome but I left these in) */
+    -webkit-transform: rotate(180deg); /* Works for Safari (I'm using chrome but I left these in) */
+    transform: rotate(180deg);
+}
+
+div#box3
+{
+  border-radius: 25px;
+  border: 2px solid gray;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+
+    -ms-transform: matrix(1, -0.3, 0, 1, 0, 1); /* Works for IE 9 (I'm using chrome but I left these in)*/
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); /* Works for Safari (I'm using chrome but I left these in)*/
+    transform: matrix(1.0, -1.5, 1, 1.0, 50px, 50px);
+}
+}
+
+@font-face {
+  font-family: 'Bangers', cursive;
+}
+
+body {
+  font-family: 'Bangers', cursive;
+}
