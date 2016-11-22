@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<title>2-D Image Carousel</title>
+<style type="text/javascript"></style>
+</head>
+<body>
+
+
+<canvas id="myCanvas" width="400" height="300" style="border:2px solid black;">
+
+<p>My 2-D Image Carousel</p>
+<p>Check out these great movies on Amazon Prime!</p>
+<img id="1" width="220" height="277" src="1.jpg" alt="Awaken the Dragon">
+<img id="2" width="220" height="277" src="2.jpg" alt="Scientology The Ex-Files">
+<img id="3" width="220" height="277" src="3.jpg" alt="Every Seventh Person">
+<img id="4" width="220" height="277" src="4.jpg" alt="Sriracha">
+<img id="5" width="220" height="277" src="5.jpg" alt="Zero Tolerance">
+
+
+<script>
+
+window.onload = myCarousel(){
+	var i = 1;
+	/*
+	Tried to create a loop where if i didn't equal -1, it would loop (should be indefinite).
+	*/
+	
+	for (i!=-1, i<10000000000, i++)	{
+			var c = document.getElementById(myCarousel);
+			var ctx = c.getContext("2d");
+			var img = document.getElementById(i);
+			ctx.drawImage(i,15,15);}
+	next i;
+	
+</script>
+
+</canvas>
+
+</body>
+</html>
